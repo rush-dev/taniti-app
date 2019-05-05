@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Local CSS-->
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+    <!-- Heroku/Flask setup -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-h.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .fa {
+          padding: 30px;
+          font-size: 50px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+
+        .fa:hover {
+          opacity: 0.7;
+        }
+
+        a.fa {
+            text-decoration: none;
+          }
+
+          a.display-1 {
+            text-decoration: none;
+          }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <!--<a class="navbar-brand" href="./home.html">Taniti</a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item px-5">
+                <a class="nav-link" href="/">Taniti<span class="sr-only">(current)</span></a>
+              </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-5" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photos</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item"  href="./pictures.html?slide=0">Volcanos</a>
+                  <a class="dropdown-item" href="./pictures.html?slide=1">Beaches</a>
+                  <a class="dropdown-item" href="./pictures.html?slide=3">Golf Courses</a>
+                  <a class="dropdown-item" href="./pictures.html?slide=4">Ocean</a>
+                  <a class="dropdown-item" href="./pictures.html?slide=2">Jungle</a>
+                </div>
+          </li>
+
+          <li class="nav-item px-5">
+            <a class="nav-link" href="./transportation.html">Transportation<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item px-5">
+            <a class="nav-link" href="./events.html">Events</a>
+          </li>
+
+          <li class="nav-item px-5">
+              <a class="nav-link" href="./hotels.html">Hotels</a>
+          </li>
+
+          <li class="nav-item px-5">
+              <a class="nav-link" href="./cuisine.html">Cuisine</a>
+          </li>
+
+          <li class="nav-item px-5">
+              <a class="nav-link" href="./faq.html">FAQ</a>
+          </li>
+
+          <li class="nav-item px-5">
+              <a class="nav-link" href="./history.html">History</a>
+          </li>
+
+          <li class="nav-item px-5">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item px-5">
+              <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron" style="background-image: url(/static/more-food.jpeg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        </div>
+      </div>
+
+      <div class="container">
+          <h2 class="text-center display-4 font-weight-bold">Cuisine</h2>
+          <hr>
+        </div>
+
+      <div class="container main-container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <img src="{{ url_for('static', filename='fish.jpeg') }}" class="img-thumbnail" style="height: 40vh; width: 50vh;">
+          </div>
+          <div class="col-md-6 col-xs-12">
+              <div class="card">
+                  <div class="card-header text-center display-4 font-weight-bold">
+                      Local Cuisine
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Taniti is world reknown for its delicous fresh seafood. Many of the eleven local restaurants serve traditional fish and rice dishes. Not only do these meal taste amazing, they are also super healthy. While on vacation here you cannot miss out on a plate of local Ahhi tuna.</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container main-container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <img src="{{ url_for('static', filename='burger.jpeg') }}" class="img-thumbnail" style="height: 40vh; width: 50vh;">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                  <div class="card">
+                      <div class="card-header text-center display-4 font-weight-bold">
+                        Home Cooking
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Taniti also offers a wide range of restaurants which serve American style meals as well as Pan-Asian cuisine. If none of these options fit your needs, Taniti also has two large scale supermarkets and plent of local shops to choose from.</p>
+                      </div>
+                    </div>
+                
+                <p></p>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Fact of the Day</h5>
+          <p>Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3">
+
+          <!-- Content -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3">
+
+            <!-- Content -->
+            <a href="#" class="text-center display-1">Taniti</a>
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright - Island of Taniti</div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
