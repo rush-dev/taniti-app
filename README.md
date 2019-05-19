@@ -1,3 +1,6 @@
+# Heroku hosted
+https://taniti-app.herokuapp.com/
+
 # taniti-app
 Taniti web app created for WGU C856 using bootstrap/flask
 
