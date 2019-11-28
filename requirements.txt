@@ -72,7 +72,7 @@ python-dateutil==1.5
 python-twitter==3.4.2
 PyTweening==1.0.3
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.1
 pyzmq==17.1.0
 QtAwesome==0.4.4
 qtconsole==4.3.1
