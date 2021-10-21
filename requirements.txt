@@ -1,7 +1,7 @@
 alabaster==0.7.11
 altgraph==0.15
 astroid==2.0
-Babel==2.6.0
+Babel==2.9.1
 backcall==0.1.0
 beautifulsoup4==4.6.3
 bleach==2.1.3
